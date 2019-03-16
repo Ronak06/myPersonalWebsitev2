@@ -1,24 +1,19 @@
 import React from "react";
 
-import Header from "./Header";
-import Resume from "./Resume";
-import Skills from "./Skills";
-import Contact from "./Contact";
+import Header from "../sections/Header/Header";
+import Resume from "../sections/Resume/Resume";
+import Skills from "../sections/Skills/Skills";
+import Contact from "../sections/Contact/Contact";
+import { Container } from "semantic-ui-react";
 
 const App = () => {
   return (
-    <div className="ui container">
+    <Container>
       <Header />
-      <div className="ui container">
-        <Resume />
-      </div>
-      <div className="ui container">
-        <Skills />
-      </div>
-      <div className="ui container">
-        <Contact />
-      </div>
-    </div>
+      <Resume />
+      <Skills />
+      <Contact />
+    </Container>
   );
 };
 

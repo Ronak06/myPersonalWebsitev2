@@ -1,0 +1,9 @@
+.resume {
+  background-color: lightblue;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

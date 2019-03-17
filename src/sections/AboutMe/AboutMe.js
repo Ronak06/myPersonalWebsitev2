@@ -7,7 +7,7 @@ const AboutMe = () => {
       class="aboutMe"
       style={{ minHeight: 700, padding: "1em 0em", textAlign: "center" }}
     >
-      <h1>AboutMe</h1>
+      <h1>Hi, I'm Ronak Patel!</h1>
     </div>
   );
 };

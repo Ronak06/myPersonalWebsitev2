@@ -1,16 +1,16 @@
 import React from "react";
 
-import "./Contact.css";
+import "./Footer.css";
 
-const Contact = () => {
+const Footer = () => {
   return (
     <div
-      class="contact"
+      class="footer"
       style={{ minHeight: 250, padding: "1em 0em", textAlign: "center" }}
     >
-      <h1>Contact</h1>
+      <h1>Footer</h1>
     </div>
   );
 };
 
-export default Contact;
+export default Footer;

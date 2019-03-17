@@ -6,16 +6,10 @@ import scrollToComponent from "react-scroll-to-component";
 import "./Navigation.css";
 
 export default class Header extends Component {
-  state = { activeItem: "home" };
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
-
   render() {
-    const { activeItem } = this.state;
-
     return (
-      <Segment inverted>
-        <Menu inverted pointing secondary className="nav">
+      <Segment inverted color="black" size="large">
+        <Menu inverted pointing secondary fixed="top" size="massive" fluid>
           <Menu.Item name="home">
             <Link to="/">Home</Link>
           </Menu.Item>

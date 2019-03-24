@@ -5,17 +5,19 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div
-      class="footer"
-      style={{ minHeight: 250, padding: "1em 0em", textAlign: "center" }}
-    >
-      <h2>
-        <Icon name="linkedin" id="linkedin" size="big" />
-        <Icon name="medium" id="medium" size="big" />
-        <Icon name="github" id="github" size="big" />
-        <Icon name="mail outline" id="mail" size="big" />
-      </h2>
-
+    <div class="footer" style={{}}>
+      <a href="https://www.linkedin.com/in/ronakpatel6/" target="_blank">
+        <Icon name="linkedin" id="linkedin" size="huge" />
+      </a>
+      <a href="https://medium.com/@ronakpatel0609" target="_blank">
+        <Icon name="medium m" id="medium" size="huge" />
+      </a>
+      <a href="https://www.github.com/Ronak06" target="_blank">
+        <Icon name="github" id="github" size="huge" />
+      </a>
+      <a href="mailto:ronak1.patel@ryerson.ca" target="_blank">
+        <Icon name="mail outline" id="mail" size="huge" />
+      </a>
       <p>
         <Icon name="copyright outline" size="large" />
         Ronak Patel 2019

@@ -16,9 +16,6 @@ export default class Header extends Component {
           <Menu.Item name="aboutme">
             <Link to="/">About Me</Link>
           </Menu.Item>
-          <Menu.Item name="resume">
-            <Link to="/">Resume</Link>
-          </Menu.Item>
           <Menu.Item name="skills">
             <Link to="/">Skills</Link>
           </Menu.Item>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from "semantic-ui-react";
 
 import "./Footer.css";
 
@@ -8,7 +9,17 @@ const Footer = () => {
       class="footer"
       style={{ minHeight: 250, padding: "1em 0em", textAlign: "center" }}
     >
-      <h1>Footer</h1>
+      <h2>
+        <Icon name="linkedin" id="linkedin" size="big" />
+        <Icon name="medium" id="medium" size="big" />
+        <Icon name="github" id="github" size="big" />
+        <Icon name="mail outline" id="mail" size="big" />
+      </h2>
+
+      <p>
+        <Icon name="copyright outline" size="large" />
+        Ronak Patel 2019
+      </p>
     </div>
   );
 };

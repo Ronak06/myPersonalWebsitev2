@@ -3,3 +3,27 @@
   color: black;
   max-width: 100%;
 }
+
+#linkedin:hover {
+  color: #0077bf;
+}
+
+#medium:hover {
+  color: grey;
+}
+
+#github:hover {
+  color: purple;
+}
+
+#mail:hover {
+  color: green;
+}
+
+h2 {
+  padding: 50px;
+}
+
+p {
+  padding: 25px;
+}

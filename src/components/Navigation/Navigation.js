@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import { Menu } from "semantic-ui-react";
-//import scrollToComponent from "react-scroll-to-component";
-
-import "./Navigation.css";
 
 export default class Header extends Component {
   state = { activeItem: "" };
@@ -18,22 +15,23 @@ export default class Header extends Component {
           name="home"
           active={activeItem === "home"}
           onClick={this.handleItemClick}
-        />
+        >
+          Home
+        </Menu.Item>
         <Menu.Item
           name="skills"
           active={activeItem === "skills"}
           onClick={this.handleItemClick}
-        />
+        >
+          Skills
+        </Menu.Item>
         <Menu.Item
           name="experience"
           active={activeItem === "experience"}
           onClick={this.handleItemClick}
-        />
-        <Menu.Item
-          name="contact"
-          active={activeItem === "contact"}
-          onClick={this.handleItemClick}
-        />
+        >
+          Experience
+        </Menu.Item>
       </Menu>
     );
   }

@@ -1,23 +1,25 @@
 //dependencies
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 //file imports
-import Navigation from "./Navigation/Navigation";
-import Home from "../sections/Home/Home";
-
-import "./App.css";
+import Navigation from "./Navigation";
+import Home from "./Home";
+import Footer from "./Footer";
+import Skills from "./Skills";
 
 const App = () => {
   return (
-    <Router>
-      <div className="container">
-        <Navigation />
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
-      </div>
-    </Router>
+    <div className="ui container">
+      <BrowserRouter>
+        <div>
+          <Navigation />
+          <Route path="/" exact component={Home} />
+          <Route path="/Skills" exact component={Skills} />
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </div>
   );
 };
 

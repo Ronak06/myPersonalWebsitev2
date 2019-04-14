@@ -1,20 +1,29 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Menu } from "semantic-ui-react";
+import styled from "styled-components";
+
+const Item = styled(Link)`
+  color: black;
+`;
 
 class Navigation extends Component {
   render() {
     return (
-      <div class="ui top fixed menu">
-        <Link to="/" className="item">
-          Home
-        </Link>
-        <Link to="/Skills" className="item">
-          Skills
-        </Link>
-        <Link to="/Projects" className="item">
-          Projects
-        </Link>
-      </div>
+      <Menu secondary size="massive">
+        <Menu.Item style={{ textAlign: "center" }}>
+          <Item to="/">Home</Item>
+        </Menu.Item>
+        <Menu.Item>
+          <Item to="/AboutMe">About Me</Item>
+        </Menu.Item>
+        <Menu.Item>
+          <Item to="/Skills">Skill</Item>
+        </Menu.Item>
+        <Menu.Item>
+          <Item to="/Projects">Projects</Item>
+        </Menu.Item>
+      </Menu>
     );
   }
 }

@@ -3,11 +3,12 @@ import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 
 //file imports
-import Navigation from "./Navigation";
-import Home from "./Home";
+import AboutMe from "./AboutMe";
 import Footer from "./Footer";
-import Skills from "./Skills";
+import Home from "./Home";
+import Navigation from "./Navigation";
 import Projects from "./Projects";
+import Skills from "./Skills";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <div>
           <Navigation />
           <Route path="/" exact component={Home} />
+          <Route path="/AboutMe" exact component={AboutMe} />
           <Route path="/Skills" exact component={Skills} />
           <Route path="/Projects" exact component={Projects} />
           <Footer />

@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../stylesheets/AboutMe.css";
-
 const AboutMe = () => {
   return (
     <div

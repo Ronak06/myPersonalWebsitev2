@@ -1,11 +1,22 @@
 import React from "react";
 import { Icon } from "semantic-ui-react";
+import styled from "styled-components";
 
-import "../stylesheets/Footer.css";
+const Wrapper = styled.div`
+  color: black;
+  max-width: 100%;
+  padding: 50px;
+  text-align: center;
+`;
+
+const Paragraph = styled.p`
+  padding: 15px;
+  font-size: 20px;
+`;
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <Wrapper>
       <a
         href="https://www.linkedin.com/in/ronakpatel6/"
         target="_blank"
@@ -34,11 +45,11 @@ const Footer = () => {
       >
         <Icon name="mail outline" id="mail" size="huge" />
       </a>
-      <p>
+      <Paragraph>
         <Icon name="copyright outline" size="large" />
         Ronak Patel 2019
-      </p>
-    </div>
+      </Paragraph>
+    </Wrapper>
   );
 };
 

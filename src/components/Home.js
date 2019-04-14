@@ -1,4 +1,5 @@
 import React from "react";
+import Typed from "react-typed";
 
 import "../stylesheets/Home.css";
 
@@ -8,11 +9,13 @@ const Home = () => {
       className="home"
       style={{ minHeight: 790, padding: "1em 0em", textAlign: "center" }}
     >
-      <h1>Hi, I'm Ronak Patel!</h1>
-      <p>
-        I am a fourth year Computer Science student. I love to learn and
-        experience new things.
-      </p>
+      <h1 style={{ color: "red" }}>
+        <Typed
+          strings={["Welcome!", "My name is Ronak Patel."]}
+          typeSpeed={100}
+          loop
+        />
+      </h1>
     </div>
   );
 };

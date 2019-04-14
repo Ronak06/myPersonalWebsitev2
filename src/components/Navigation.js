@@ -18,7 +18,7 @@ class Navigation extends Component {
           <Item to="/AboutMe">About Me</Item>
         </Menu.Item>
         <Menu.Item>
-          <Item to="/Skills">Skill</Item>
+          <Item to="/Skills">Skills</Item>
         </Menu.Item>
         <Menu.Item>
           <Item to="/Projects">Projects</Item>

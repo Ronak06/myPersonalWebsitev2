@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "emojione": "^4.5.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.4.0",
     "react-scripts": "2.1.8",
     "react-scroll-to-component": "^1.0.2",
+    "react-typed": "^1.1.2",
     "semantic-ui-react": "^0.86.0",
     "styled-components": "^4.2.0"
   },

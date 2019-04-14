@@ -1,4 +1,10 @@
 import React from "react";
+import styled from "styled-components";
+
+const Content = styled.p`
+  font-size: 1.5em;
+  margin-top: 0px;
+`;
 
 const AboutMe = () => {
   return (
@@ -7,6 +13,11 @@ const AboutMe = () => {
       style={{ minHeight: 790, padding: "1em 0em", textAlign: "center" }}
     >
       <h1>Hi, I'm Ronak Patel!</h1>
+      <Content>
+        I am a 4th year Computer Science Student. I love to learn and experience
+        new things. Coding is something I truly enjoy and makes me who I am.
+        Outside of programming, I love watching (and playing) Basketball.
+      </Content>
     </div>
   );
 };

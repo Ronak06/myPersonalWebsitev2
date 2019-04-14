@@ -11,6 +11,9 @@ class Navigation extends Component {
         <Link to="/Skills" className="item">
           Skills
         </Link>
+        <Link to="/Projects" className="item">
+          Projects
+        </Link>
       </div>
     );
   }

@@ -1,18 +1,6 @@
 import React from "react";
 import { Icon } from "semantic-ui-react";
-import styled from "styled-components";
-
-const Wrapper = styled.div`
-  color: black;
-  max-width: 100%;
-  padding: 50px;
-  text-align: center;
-`;
-
-const Paragraph = styled.p`
-  padding: 15px;
-  font-size: 20px;
-`;
+import { Wrapper, Paragraph } from "../themes/CustomFooter";
 
 const Footer = () => {
   return (

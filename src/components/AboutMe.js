@@ -1,10 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-
-const Content = styled.p`
-  font-size: 1.5em;
-  margin-top: 0px;
-`;
+import { Content } from "../themes/Content";
 
 const AboutMe = () => {
   return (

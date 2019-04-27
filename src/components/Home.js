@@ -11,7 +11,11 @@ const Home = () => {
     >
       <h1 style={{ color: "red" }}>
         <Typed
-          strings={["Welcome!", "My name is Ronak Patel."]}
+          strings={[
+            "Welcome!",
+            "My name is Ronak Patel.",
+            "and this is My Website!"
+          ]}
           typeSpeed={100}
           loop
         />

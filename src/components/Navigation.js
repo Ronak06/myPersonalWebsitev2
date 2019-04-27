@@ -23,6 +23,9 @@ class Navigation extends Component {
         <Menu.Item>
           <Item to="/Projects">Projects</Item>
         </Menu.Item>
+        <Menu.Item>
+          <Item to="/Resume">Resume</Item>
+        </Menu.Item>
       </Menu>
     );
   }

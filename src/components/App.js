@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import Home from "./Home";
 import Navigation from "./Navigation";
 import Projects from "./Projects";
+import Resume from "./Resume";
 import Skills from "./Skills";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/AboutMe" exact component={AboutMe} />
           <Route path="/Skills" exact component={Skills} />
           <Route path="/Projects" exact component={Projects} />
+          <Route path="/Resume" exact component={Resume} />
           <Footer />
         </div>
       </BrowserRouter>

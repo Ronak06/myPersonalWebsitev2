@@ -7,11 +7,16 @@ const Item = styled(Link)`
   color: black;
 `;
 
+const itemStyle = {
+  fontFamily: "Berkshire Swash",
+  fontSize: "25px"
+};
+
 class Navigation extends Component {
   render() {
     return (
-      <Menu secondary size="massive">
-        <Menu.Item style={{ textAlign: "center" }}>
+      <Menu secondary size="massive" style={itemStyle}>
+        <Menu.Item>
           <Item to="/">Home</Item>
         </Menu.Item>
         <Menu.Item>

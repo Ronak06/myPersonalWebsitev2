@@ -1,6 +1,5 @@
 import React from "react";
-import { Icon } from "semantic-ui-react";
-import { Wrapper, Paragraph } from "../themes/CustomFooter";
+import { Wrapper, Paragraph, Icon } from "../themes/CustomFooter";
 
 const Footer = () => {
   return (
@@ -10,31 +9,31 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon name="linkedin" id="linkedin" size="huge" />
+        <Icon className="linkedin icon" id="linkedin" size="huge" />
       </a>
       <a
         href="https://medium.com/@ronakpatel0609"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon name="medium m" id="medium" size="huge" />
+        <Icon className="medium icon" id="medium" size="huge" />
       </a>
       <a
         href="https://www.github.com/Ronak06"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon name="github" id="github" size="huge" />
+        <Icon className="github icon" id="github" size="huge" />
       </a>
       <a
         href="mailto:ronak1.patel@ryerson.ca"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Icon name="mail outline" id="mail" size="huge" />
+        <Icon className="envelope outline icon" id="mail" size="huge" />
       </a>
       <Paragraph>
-        <Icon name="copyright outline" size="large" />
+        <Icon className="copyright outline icon" size="large" />
         Ronak Patel 2019
       </Paragraph>
     </Wrapper>

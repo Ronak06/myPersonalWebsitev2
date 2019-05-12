@@ -22,7 +22,6 @@ const App = () => {
           <Route path="/Skills" exact component={Skills} />
           <Route path="/Projects" exact component={Projects} />
           <Route path="/Resume" exact component={Resume} />
-          <Footer />
         </div>
       </BrowserRouter>
     </div>

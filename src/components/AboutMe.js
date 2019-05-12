@@ -14,9 +14,14 @@ const Content = styled.p`
   padding-top: 150px;
 `;
 
+const Style = styled.div`
+  minHeight: 790,
+  overflowY: hidden
+`;
+
 const AboutMe = () => {
   return (
-    <div className="aboutMe" style={{ minHeight: 790 }}>
+    <Style>
       <Picture src={require("../images/Me.jpg")} alt="Ronak Patel" />
       <Content>
         This is where my bio will go This is where my bio will go This is where
@@ -25,7 +30,7 @@ const AboutMe = () => {
         where my bio will go This is where my bio will goThis is where my bio
         will go This is where my bio will go This is where my bio will go
       </Content>
-    </div>
+    </Style>
   );
 };
 

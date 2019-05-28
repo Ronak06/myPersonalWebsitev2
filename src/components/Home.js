@@ -1,18 +1,14 @@
 import React from "react";
-import { Header, Name } from "../themes/styles";
+import { Header, Name, homeStyle } from "../themes/styles";
 import Footer from "./Footer";
-
-const style = {
-  minHeight: 790,
-  padding: "1em 0em",
-  textAlign: "center"
-};
 
 const Home = () => {
   return (
-    <div style={style}>
+    <div style={homeStyle}>
       <Header>
-        Hi, I'm <Name>Ronak Patel</Name>
+        Hi,
+        <br />
+        I'm <Name> Ronak Patel</Name>
       </Header>
       <Footer />
     </div>

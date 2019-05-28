@@ -26,5 +26,33 @@ export const Header = styled.h1`
   text-align: center;
   vertical-align: middle;
   line-height: 400px;
-  font-size: 85px;
+  font-size: 30px;
+`;
+
+export const Picture = styled.img`
+  float: left;
+  padding: 50px;
+  padding-top: 100px;
+  width: 500px;
+`;
+
+export const ContentTwo = styled.p`
+  font-size: 27px;
+  padding: 50px;
+  padding-top: 150px;
+`;
+
+export const Style = styled.div`
+  minHeight: 790,
+  overflowY: hidden
+`;
+
+export const itemStyle = {
+  fontFamily: "Berkshire Swash",
+  fontSize: "25px"
+};
+
+export const MenuHeader = styled.div`
+  font-size: 10px;
+  padding: 0px;
 `;

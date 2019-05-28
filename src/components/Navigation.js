@@ -1,16 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-
-const itemStyle = {
-  fontFamily: "Berkshire Swash",
-  fontSize: "25px"
-};
-
-const MenuHeader = styled.div`
-  font-size: 10px;
-  padding: 0px;
-`;
+import { itemStyle, MenuHeader } from "../themes/styles";
 
 class Navigation extends Component {
   render() {

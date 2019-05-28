@@ -1,5 +1,5 @@
 import React from "react";
-import { Content, Wrapper, Images } from "../themes/Content";
+import { Content, Wrapper, Images } from "../themes/styles";
 
 const Skills = () => {
   return (

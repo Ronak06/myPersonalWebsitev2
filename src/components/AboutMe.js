@@ -1,35 +1,19 @@
 import React from "react";
-import styled from "styled-components";
-
-const Picture = styled.img`
-  float: left;
-  padding: 50px;
-  padding-top: 100px;
-  width: 500px;
-`;
-
-const Content = styled.p`
-  font-size: 27px;
-  padding: 50px;
-  padding-top: 150px;
-`;
-
-const Style = styled.div`
-  minHeight: 790,
-  overflowY: hidden
-`;
+import Emoji from "../themes/Emoji";
+import { Picture, ContentTwo, Style } from "../themes/styles";
 
 const AboutMe = () => {
   return (
     <Style>
       <Picture src={require("../images/Me.jpg")} alt="Ronak Patel" />
-      <Content>
-        This is where my bio will go This is where my bio will go This is where
-        my bio will go This is where my bio will go This is where my bio will
-        goThis is where my bio will go This is where my bio will go This is
-        where my bio will go This is where my bio will goThis is where my bio
-        will go This is where my bio will go This is where my bio will go
-      </Content>
+      <ContentTwo>
+        I love to learn and experience new things. Coding{" "}
+        <Emoji symbol="💻" label="laptop" /> is something I truly enjoy doing
+        and it makes me who I am. Outside of programming, I love watching (and
+        playing) Basketball <Emoji symbol="🏀" label="basketball" />, gaming{" "}
+        <Emoji symbol="🎮" label="gaming" />, and travelling{" "}
+        <Emoji symbol="🛫" label="airplane" />.
+      </ContentTwo>
     </Style>
   );
 };

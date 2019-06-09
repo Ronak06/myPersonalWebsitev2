@@ -5,7 +5,10 @@ import { MenuHeader } from "../themes/styles";
 class Navigation extends Component {
   render() {
     return (
-      <MenuHeader className="ui menu secondary" style={{ fontSize: "20px" }}>
+      <MenuHeader
+        className="ui menu secondary"
+        style={{ fontSize: "20px", fontFamily: "Playfair Display" }}
+      >
         <Link to="/" className="item">
           Home
         </Link>

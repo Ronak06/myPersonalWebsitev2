@@ -1,5 +1,5 @@
 import React from "react";
-import { Wrapper, Paragraph, Icon } from "../themes/CustomFooter";
+import { Wrapper, Icon } from "../themes/CustomFooter";
 
 const Footer = () => {
   return (

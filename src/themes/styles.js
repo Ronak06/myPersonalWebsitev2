@@ -4,22 +4,32 @@ export const Content = styled.p`
   font-size: 27px;
   padding: 50px;
   padding-top: 150px;
-  font-family: "Suranna", serif;
 `;
 
 export const Header = styled.h1`
+  font-size: 155px;
+  font-family: "Vidaloka", serif;
+  left: 0;
+  line-height: 200px;
+  margin-top: -100px;
+  position: absolute;
   text-align: center;
-  vertical-align: middle;
-  line-height: 150px;
-  font-family: "Petit Formal Script", cursive;
-  font-size: 30px;
+  top: 30%;
+  width: 100%;
 `;
 
-export const homeStyle = {
-  minHeight: 790,
-  padding: "1em 0em",
-  textAlign: "center"
-};
+export const Header3 = styled.h3`
+  font-size: 25px;
+  font-family: "Vidaloka", serif;
+  left: 0;
+  line-height: 200px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  width: 100%;
+  color: magenta;
+`;
 
 export const Images = styled.img`
   width: 14em;
@@ -28,31 +38,20 @@ export const Images = styled.img`
 `;
 
 export const itemStyle = {
-  fontFamily: "Petit Formal Script",
   fontSize: "15px"
 };
 
 export const MenuHeader = styled.div`
-  font-size: 10px;
+  font-size: 100px;
   padding: 0px;
-`;
-
-export const Name = styled.span`
-  font-family: "Chonburi", serif;
-  color: #42f4b3;
-  font-size: 75px;
+  position: fixed;
+  right: 10%;
 `;
 
 export const Picture = styled.img`
-  float: left;
   padding: 50px;
   padding-top: 75px;
-  width: 450px;
-`;
-
-export const Style = styled.div`
-  minHeight: 790,
-  overflowY: hidden
+  width: 1500px;
 `;
 
 export const Wrapper = styled.div`

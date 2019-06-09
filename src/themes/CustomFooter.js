@@ -7,12 +7,7 @@ export const Wrapper = styled.div`
   text-align: center;
 `;
 
-export const Paragraph = styled.p`
-  padding: 15px;
-  font-size: 20px;
-`;
-
 export const Icon = styled.i`
-  font-size: 60px !important;
+  font-size: 40px !important;
   color: black;
 `;

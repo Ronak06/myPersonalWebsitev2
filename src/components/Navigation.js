@@ -1,33 +1,17 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { itemStyle, MenuHeader } from "../themes/styles";
+import { MenuHeader } from "../themes/styles";
 
 class Navigation extends Component {
   render() {
     return (
-      <MenuHeader
-        className="ui menu secondary"
-        size="massive"
-        style={itemStyle}
-      >
+      <MenuHeader className="ui menu secondary" style={{ fontSize: "20px" }}>
         <Link to="/" className="item">
           Home
         </Link>
 
         <Link to="/AboutMe" className="item">
           About Me
-        </Link>
-
-        <Link to="/Skills" className="item">
-          Skills
-        </Link>
-
-        <Link to="/Projects" className="item">
-          Projects
-        </Link>
-
-        <Link to="/Resume" className="item">
-          Resume
         </Link>
       </MenuHeader>
     );

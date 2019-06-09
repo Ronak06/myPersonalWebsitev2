@@ -32,10 +32,6 @@ const Footer = () => {
       >
         <Icon className="envelope outline icon" id="mail" size="huge" />
       </a>
-      <Paragraph>
-        <Icon className="copyright outline icon" size="large" />
-        Ronak Patel 2019
-      </Paragraph>
     </Wrapper>
   );
 };

@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const Content = styled.p`
   font-size: 27px;
-  padding: 50px;
-  padding-top: 150px;
+  padding-top: 125px;
 `;
 
 export const Header = styled.h1`

@@ -6,6 +6,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import AboutMe from "./AboutMe";
 import Home from "./Home";
 import Navigation from "./Navigation";
+import Projects from "./Projects";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Navigation />
           <Route path="/" exact component={Home} />
           <Route path="/AboutMe" exact component={AboutMe} />
+          <Route path="/Projects" exact component={Projects} />
         </div>
       </BrowserRouter>
     </div>

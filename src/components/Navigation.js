@@ -16,6 +16,10 @@ class Navigation extends Component {
         <Link to="/AboutMe" className="item">
           About Me
         </Link>
+
+        <Link to="/Projects" className="item">
+          Projects
+        </Link>
       </MenuHeader>
     );
   }

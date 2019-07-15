@@ -1,15 +1,13 @@
 import React from "react";
+import { ProjectHeader } from "../themes/styles";
 
 const Projects = () => {
   return (
     <div
       className="ui equal width center aligned padded grid"
-      style={{ paddingTop: 50 }}
+      style={{ paddingTop: 100 }}
     >
-      <div className="row">
-        <div className="column">text1</div>
-        <div className="column">text2</div>
-      </div>
+      <ProjectHeader>-Recent Work-</ProjectHeader>
     </div>
   );
 };

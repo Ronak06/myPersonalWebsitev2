@@ -1,25 +1,21 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { MenuHeader } from "../themes/styles";
+import { MenuHeader, StyledLink } from "../themes/styles";
 
 class Navigation extends Component {
   render() {
     return (
-      <MenuHeader
-        className="ui menu secondary"
-        style={{ fontSize: "20px", fontFamily: "Playfair Display" }}
-      >
-        <Link to="/" className="item">
+      <MenuHeader className="ui menu secondary">
+        <StyledLink to="/" className="item">
           Home
-        </Link>
+        </StyledLink>
 
-        <Link to="/AboutMe" className="item">
+        <StyledLink to="/AboutMe" className="item">
           About Me
-        </Link>
+        </StyledLink>
 
-        <Link to="/Projects" className="item">
+        <StyledLink to="/Projects" className="item">
           Projects
-        </Link>
+        </StyledLink>
       </MenuHeader>
     );
   }

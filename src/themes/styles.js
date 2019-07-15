@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Content = styled.p`
   font-size: 27px;
@@ -17,34 +18,34 @@ export const Header = styled.h1`
   width: 100%;
 `;
 
-export const Header3 = styled.h3`
-  font-size: 25px;
-  font-family: "Vidaloka", serif;
+export const ProjectHeader = styled.h1`
+  font-family: "Cormorant Garamond", serif;
+`;
+
+export const FooterHeader = styled.h3`
   left: 0;
   line-height: 200px;
   margin-top: -100px;
   position: absolute;
-  text-align: center;
   top: 55%;
   width: 100%;
-  color: magenta;
 `;
-
-export const Images = styled.img`
-  width: 14em;
-  height: 10em;
-  float: center;
-`;
-
-export const itemStyle = {
-  fontSize: "15px"
-};
 
 export const MenuHeader = styled.div`
   font-size: 100px;
+  font-family: "Comfortaa", cursive;
   padding: 0px;
   position: fixed;
   right: 10%;
+`;
+
+export const StyledLink = styled(Link)`
+  font-size: 20px;
+  font-family: "Comfortaa", cursive;
+
+  &:hover {
+    background-color: #fffafa !important;
+  }
 `;
 
 export const Picture = styled.img`

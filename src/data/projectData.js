@@ -3,7 +3,7 @@ export const data = [
     project: "Contact Keeper",
     stack: ["react", "express", "mongodb", "node"],
     description:
-      "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
+      "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
     website: "https://www.google.com",
     github: "https://www.github.com",
     image:
@@ -15,9 +15,9 @@ export const data = [
     project: "Cardio Tracker",
     stack: ["react", "redux", "semantic-ui"],
     description:
-      "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
+      "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
     website: "https://www.google.com",
-    github: "https://www.github.com",
+    github: "https://github.com/Ronak06/Cardio-Tracker",
     needs: "People with super powers, semi-super powers, or no powers at all",
     image:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
@@ -25,11 +25,11 @@ export const data = [
   },
   {
     project: "Github Finder",
-    stack: ["react", "context", "Github API"],
+    stack: ["react", "githubapi"],
     description:
-      "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
-    website: "https://www.google.com",
-    github: "https://www.github.com",
+      "The main objective of the application is for a user to look up users on Github.",
+    website: "https://githubfinder0609.netlify.com",
+    github: "https://github.com/Ronak06/Github-Finder",
     image:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
     needs: "People with super powers",
@@ -37,11 +37,11 @@ export const data = [
   },
   {
     project: "My Personal Website",
-    stack: ["python", "django"],
+    stack: ["react", "semantic-ui"],
     description:
-      "Some sample text giving project elevator pitch and blah blah and other stuff and goals and dreams and rainbows and butterflies and sunshine. ",
+      "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
     website: "https://www.google.com",
-    github: "https://www.github.com",
+    github: "https://github.com/Ronak06/myPersonalWebsitev2",
     needs: "People with super powers, semi-super powers, or no powers at all",
     image:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",

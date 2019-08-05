@@ -1,5 +1,4 @@
 import React from "react";
-import { ProjectHeader } from "../themes/styles";
 import CardProjects from "../components/cards/CardProjects";
 import { data } from "../data/projectData";
 

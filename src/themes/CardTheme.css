@@ -1,9 +1,4 @@
-#title {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-.icon {
+.iconP {
   font-size: 0.9rem;
   display: inline-flex;
   background: #d8d8d8;
@@ -11,10 +6,11 @@
   margin-right: 5px;
   margin-bottom: 15px;
 }
-.icon span {
+.iconP span {
   border-radius: 5px;
   padding: 3px 5px;
 }
+
 .react {
   background: #bad5f5;
 }
@@ -39,18 +35,51 @@
 .python span::after {
   content: "Python";
 }
-.django {
+.mongodb {
   background: #afeae5;
 }
-.django span::after {
-  content: "Django";
+.mongodb span::after {
+  content: "MongoDB";
 }
 .card a {
   padding-right: 15px;
 }
-.github {
-  color: #739150;
+
+.githubapi span::after {
+  content: "Github API";
 }
 .status {
   color: #7699c2;
+}
+.semantic-ui {
+  background: #73d9cd;
+}
+.semantic-ui span::after {
+  content: "Semantic-UI";
+}
+.redux {
+  background: #764abc;
+}
+.redux span::after {
+  content: "Redux";
+}
+.code {
+  background: #e1c1c1;
+  float: left;
+  position: absolute;
+  left: 10px;
+}
+.code span::after {
+  content: "Code";
+  font-size: 20px;
+}
+.demo {
+  background: #e1c1c1;
+  float: right;
+  position: absolute;
+  right: 10px;
+}
+.demo span::after {
+  content: "Demo";
+  font-size: 20px;
 }

@@ -20,6 +20,7 @@ export const Header = styled.h1`
 
 export const ProjectHeader = styled.h1`
   font-family: "Cormorant Garamond", serif;
+  text-align: center;
 `;
 
 export const FooterHeader = styled.h3`

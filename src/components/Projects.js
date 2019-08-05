@@ -1,5 +1,7 @@
 import React from "react";
 import { ProjectHeader } from "../themes/styles";
+import CardProjects from "../components/cards/CardProjects";
+import { data } from "../data/projectData";
 
 const Projects = () => {
   return (
@@ -7,7 +9,7 @@ const Projects = () => {
       className="ui equal width center aligned padded grid"
       style={{ paddingTop: 100 }}
     >
-      <ProjectHeader>-Recent Work-</ProjectHeader>
+      <CardProjects data={data} />
     </div>
   );
 };

@@ -10,7 +10,7 @@ const AboutMe = () => {
     >
       <div className="row">
         <div className="column">
-          <Picture src={require("../images/Me.jpg")} alt="Ronak Patel" />
+          <Picture src={require("../Me.jpg")} alt="Ronak Patel" />
         </div>
         <div className="column">
           <Content>

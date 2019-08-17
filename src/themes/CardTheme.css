@@ -64,7 +64,7 @@
   content: "Redux";
 }
 .code {
-  background: #e1c1c1;
+  background: #ffffff;
   float: left;
   position: absolute;
   left: 10px;
@@ -74,7 +74,7 @@
   font-size: 20px;
 }
 .demo {
-  background: #e1c1c1;
+  background: #ffffff;
   float: right;
   position: absolute;
   right: 10px;
@@ -82,4 +82,8 @@
 .demo span::after {
   content: "Demo";
   font-size: 20px;
+}
+
+.ScrollUpButton__Toggled:focus {
+  outline: 0;
 }

@@ -7,8 +7,8 @@ export const Content = styled.p`
 `;
 
 export const Header = styled.h1`
-  font-size: 155px;
-  font-family: "Vidaloka", serif;
+  font-size: 200px;
+  font-family: "Satisfy", cursive;
   left: 0;
   line-height: 200px;
   margin-top: -100px;
@@ -33,16 +33,13 @@ export const FooterHeader = styled.h3`
 `;
 
 export const MenuHeader = styled.div`
-  font-size: 100px;
   font-family: "Comfortaa", cursive;
-  padding: 0px;
-  position: fixed;
-  right: 10%;
+  margin-top: "30px";
 `;
 
 export const StyledLink = styled(Link)`
   font-size: 20px;
-  font-family: "Comfortaa", cursive;
+  font-family: "Libre Caslon Text", serif;
 
   &:hover {
     background-color: #fffafa !important;

@@ -7,16 +7,19 @@ import AboutMe from "./AboutMe";
 import Home from "./Home";
 import Navigation from "./Navigation";
 import Projects from "./Projects";
+import Resume from "./Resume";
+import "../App.css";
 
 const App = () => {
   return (
-    <div className="ui container">
+    <div className="ui container test">
       <BrowserRouter>
         <div>
           <Navigation />
           <Route path="/" exact component={Home} />
           <Route path="/AboutMe" exact component={AboutMe} />
           <Route path="/Projects" exact component={Projects} />
+          <Route path="/Resume" exact component={Resume} />
         </div>
       </BrowserRouter>
     </div>

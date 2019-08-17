@@ -28,7 +28,6 @@ const Card = props => {
             rel="noopener noreferrer"
           >
             <span className="code">
-              <i className="large github icon" />
               <span />
             </span>
           </a>

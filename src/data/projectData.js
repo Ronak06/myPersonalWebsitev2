@@ -27,7 +27,7 @@ export const data = [
     project: "Github Finder",
     stack: ["react", "githubapi"],
     description:
-      "The main objective of the application is for a user to look up users on Github.",
+      "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
     website: "https://githubfinder0609.netlify.com",
     github: "https://github.com/Ronak06/Github-Finder",
     image:

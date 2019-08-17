@@ -1,5 +1,4 @@
 import React from "react";
-import { Icon } from "../themes/CustomFooter";
 import "../themes/footer.css";
 
 const Footer = () => {

@@ -9,7 +9,8 @@ export const data = [
     image:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
     needs: "People with super powers",
-    status: "In Development"
+    status: "In Development",
+    id: 1
   },
   {
     project: "Cardio Tracker",
@@ -21,7 +22,8 @@ export const data = [
     needs: "People with super powers, semi-super powers, or no powers at all",
     image:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
-    status: "Live"
+    status: "Live",
+    id: 2
   },
   {
     project: "Github Finder",
@@ -33,7 +35,8 @@ export const data = [
     image:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
     needs: "People with super powers",
-    status: "Live"
+    status: "Live",
+    id: 3
   },
   {
     project: "My Personal Website",
@@ -45,6 +48,7 @@ export const data = [
     needs: "People with super powers, semi-super powers, or no powers at all",
     image:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
-    status: "In Development"
+    status: "In Development",
+    id: 4
   }
 ];

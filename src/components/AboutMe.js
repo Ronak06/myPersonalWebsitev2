@@ -13,8 +13,9 @@ const AboutMe = () => {
           <Picture src={require("../Me.jpg")} alt="Ronak Patel" />
         </div>
         <div className="column">
+          <h1 style={{ fontSize: "50px", paddingTop: "100px" }}>Who am I?</h1>
           <Content>
-            <h1 style={{ fontSize: "50px" }}>Who am I?</h1>Hi! My name is Ronak
+            Hi! My name is Ronak
             Patel. I am a Computer Science student aspiring to be a Full-stack
             Developer. I truly enjoy coding <Emoji symbol="💻" label="laptop" />{" "}
             and love to build new things. Outside of programming, I love

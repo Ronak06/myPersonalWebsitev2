@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Content = styled.p`
   font-size: 27px;
-  padding-top: 125px;
+  padding-top: 25px;
 `;
 
 export const Header = styled.h1`

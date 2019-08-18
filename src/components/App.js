@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 //file imports
 import AboutMe from "./AboutMe";
 import Home from "./Home";
-import Navigation from "./Navigation";
 import Projects from "./Projects";
 import Resume from "./Resume";
 import { MenuHeader } from "../themes/styles";
@@ -15,67 +14,68 @@ import "../App.css";
 
 const GlobalStyle = createGlobalStyle`
 body {
-  background-color: ${props => (props.theme.mode === "dark" ? "#111" : "#EEE")};
-  color: ${props => (props.theme.mode === "dark" ? "#EEE" : "#000")};
+  background-color: ${props => (props.theme.mode === "dark" ? "#1c213d" : "#faf1f0")};
+  color: ${props => (props.theme.mode === "dark" ? "#ffffff" : "#000")};
 },
 a {
-  color: ${props => (props.theme.mode === "dark" ? "#EEE" : "#000")};
+  color: ${props => (props.theme.mode === "dark" ? "#ffffff" : "#000")};
 }
 `;
 
 const StyledLink = styled(Link)`
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Libre Caslon Text", serif;
-
-  &:hover {
-    background-color: #fffafa !important;
-  }
 `;
 
 const App = () => {
   const [theme, setTheme] = useState({ mode: "light" });
+  const [active, setActive] = useState({ item: "home"});
+
   return (
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyle />
-        <div className="ui container test">
-          
+        <div className="ui container">
           <BrowserRouter>
             <div>
-              <MenuHeader className="ui secondary menu">
+              <MenuHeader className="ui secondary pointing menu">
                 <StyledLink
                   to="/"
-                  className="item"
+                  className={active.item === "home" ? "item active" : "item"}
                   style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
+                  onClick={() => setActive({ item: "home"})}
                 >
                   Home
                 </StyledLink>
 
                 <StyledLink
                   to="/AboutMe"
-                  className="item"
+                  className={active.item === "aboutme" ? "item active" : "item"}
                   style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
+                  onClick={() => setActive({ item: "aboutme"})}
                 >
                   About Me
                 </StyledLink>
 
                 <StyledLink
                   to="/Projects"
-                  className="item"
+                  className={active.item === "projects" ? "item active" : "item"}
                   style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
+                  onClick={() => setActive({ item: "projects"})}
                 >
                   Projects
                 </StyledLink>
 
                 <StyledLink
                   to="/Resume"
-                  className="item"
+                  className={active.item === "resume" ? "item active" : "item"}
                   style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
+                  onClick={() => setActive({ item: "resume"})}
                 >
                   Resume
                 </StyledLink>
 
-                <div className="switch">
+                <div className="switch right menu">
                   <input
                     id="cmn-toggle-1"
                     className="cmn-toggle cmn-toggle-round"

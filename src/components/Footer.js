@@ -1,7 +1,13 @@
 import React from "react";
 import "../themes/footer.css";
+import styled, { withTheme } from "styled-components";
 
-const Footer = () => {
+const Icon = styled.i`
+  font-size: 40px !important;
+  color: ${props => props.theme.mode === "dark" ? "#EEE" : "#111"};
+`;
+
+const Footer = (props) => {
   return (
     <div className="wrapper">
       <a
@@ -9,31 +15,31 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="linkedin icon footericon" id="linkedin" size="huge" />
+      <Icon className="linkedin icon" id="linkedin" size="huge" />
       </a>
       <a
         href="https://medium.com/@ronakpatel0609"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="medium icon footericon" id="medium" size="huge" />
+        <Icon className="medium icon" id="medium" size="huge" />
       </a>
       <a
         href="https://www.github.com/Ronak06"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="github icon footericon" id="github" size="huge" />
+        <Icon className="github icon" id="github" size="huge" />
       </a>
       <a
         href="mailto:ronak1.patel@ryerson.ca"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="envelope outline icon footericon" id="mail" size="huge" />
+        <Icon className="envelope outline icon" id="mail" size="huge" />
       </a>
     </div>
   );
 };
 
-export default Footer;
+export default withTheme(Footer);

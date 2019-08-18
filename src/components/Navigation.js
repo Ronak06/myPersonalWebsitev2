@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { MenuHeader } from "../themes/styles";
 
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { withTheme } from "styled-components";
 
 const StyledLink = styled(Link)`
   font-size: 15px;
@@ -14,13 +14,12 @@ const StyledLink = styled(Link)`
 `;
 
 const Navigation = props => {
-  console.log(props.style);
   return (
     <MenuHeader className="ui secondary menu">
       <StyledLink
         to="/"
         className="item"
-        style={{ color: props.style.mode === "dark" ? "#EEE" : "#111" }}
+        style={{ color: props.theme.mode === "dark" ? "#EEE" : "#111" }}
       >
         Home
       </StyledLink>
@@ -52,4 +51,4 @@ const Navigation = props => {
   );
 };
 
-export default Navigation;
+export default withTheme(Navigation);

@@ -11,8 +11,6 @@ import Projects from "./Projects";
 import Resume from "./Resume";
 import "../App.css";
 
-import SiteState from "../context/SiteState";
-
 const GlobalStyle = createGlobalStyle`
 body {
   background-color: ${props => (props.theme.mode === "dark" ? "#111" : "#EEE")};
@@ -26,33 +24,35 @@ a {
 const App = () => {
   const [theme, setTheme] = useState({ mode: "light" });
   return (
-    <SiteState>
-      <ThemeProvider theme={theme}>
-        <>
-          <GlobalStyle />
-          <div className="ui container test">
-            <button
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyle />
+        <div className="ui container test">
+          <div className="switch">
+            <input
+              id="cmn-toggle-1"
+              className="cmn-toggle cmn-toggle-round"
+              type="checkbox"
               onClick={e =>
                 setTheme(
                   theme.mode === "light" ? { mode: "dark" } : { mode: "light" }
                 )
               }
-            >
-              test
-            </button>
-            <BrowserRouter>
-              <div>
-                <Navigation style={theme} />
-                <Route path="/" exact component={Home} />
-                <Route path="/AboutMe" exact component={AboutMe} />
-                <Route path="/Projects" exact component={Projects} />
-                <Route path="/Resume" exact component={Resume} />
-              </div>
-            </BrowserRouter>
+            />
+            <label htmlFor="cmn-toggle-1" />
           </div>
-        </>
-      </ThemeProvider>
-    </SiteState>
+          <BrowserRouter>
+            <div>
+              <Navigation style={theme} />
+              <Route path="/" exact component={Home} />
+              <Route path="/AboutMe" exact component={AboutMe} />
+              <Route path="/Projects" exact component={Projects} />
+              <Route path="/Resume" exact component={Resume} />
+            </div>
+          </BrowserRouter>
+        </div>
+      </>
+    </ThemeProvider>
   );
 };
 

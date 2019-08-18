@@ -1,7 +1,8 @@
 //dependencies
 import React, { useState } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import { ThemeProvider, createGlobalStyle } from "styled-components";
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
+import { Link } from "react-router-dom";
 
 //file imports
 import AboutMe from "./AboutMe";
@@ -9,6 +10,7 @@ import Home from "./Home";
 import Navigation from "./Navigation";
 import Projects from "./Projects";
 import Resume from "./Resume";
+import { MenuHeader } from "../themes/styles";
 import "../App.css";
 
 const GlobalStyle = createGlobalStyle`
@@ -21,6 +23,15 @@ a {
 }
 `;
 
+const StyledLink = styled(Link)`
+  font-size: 15px;
+  font-family: "Libre Caslon Text", serif;
+
+  &:hover {
+    background-color: #fffafa !important;
+  }
+`;
+
 const App = () => {
   const [theme, setTheme] = useState({ mode: "light" });
   return (
@@ -28,22 +39,56 @@ const App = () => {
       <>
         <GlobalStyle />
         <div className="ui container test">
-          <div className="switch">
-            <input
-              id="cmn-toggle-1"
-              className="cmn-toggle cmn-toggle-round"
-              type="checkbox"
-              onClick={e =>
-                setTheme(
-                  theme.mode === "light" ? { mode: "dark" } : { mode: "light" }
-                )
-              }
-            />
-            <label htmlFor="cmn-toggle-1" />
-          </div>
+          
           <BrowserRouter>
             <div>
-              <Navigation style={theme} />
+              <MenuHeader className="ui secondary menu">
+                <StyledLink
+                  to="/"
+                  className="item"
+                  style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
+                >
+                  Home
+                </StyledLink>
+
+                <StyledLink
+                  to="/AboutMe"
+                  className="item"
+                  style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
+                >
+                  About Me
+                </StyledLink>
+
+                <StyledLink
+                  to="/Projects"
+                  className="item"
+                  style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
+                >
+                  Projects
+                </StyledLink>
+
+                <StyledLink
+                  to="/Resume"
+                  className="item"
+                  style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
+                >
+                  Resume
+                </StyledLink>
+
+                <div className="switch">
+                  <input
+                    id="cmn-toggle-1"
+                    className="cmn-toggle cmn-toggle-round"
+                    type="checkbox"
+                    onClick={e =>
+                      setTheme(
+                        theme.mode === "light" ? { mode: "dark" } : { mode: "light" }
+                      )
+                  }
+                  />
+                  <label htmlFor="cmn-toggle-1" />
+                </div>
+              </MenuHeader>
               <Route path="/" exact component={Home} />
               <Route path="/AboutMe" exact component={AboutMe} />
               <Route path="/Projects" exact component={Projects} />

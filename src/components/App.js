@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 import AboutMe from "./AboutMe";
 import Home from "./Home";
 import Projects from "./Projects";
-import Resume from "./Resume";
 import { MenuHeader } from "../themes/styles";
 import "../App.css";
 
@@ -29,7 +28,7 @@ const StyledLink = styled(Link)`
 
 const App = () => {
   const [theme, setTheme] = useState({ mode: "light" });
-  const [active, setActive] = useState({ item: "home"});
+  const [active, setActive] = useState({ item: window.location.pathname });
 
   return (
     <ThemeProvider theme={theme}>
@@ -41,38 +40,29 @@ const App = () => {
               <MenuHeader className="ui secondary pointing menu">
                 <StyledLink
                   to="/"
-                  className={active.item === "home" ? "item active" : "item"}
+                  className={active.item === "/" ? "item active" : "item"}
                   style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
-                  onClick={() => setActive({ item: "home"})}
+                  onClick={() => setActive({ item: "/"})}
                 >
                   Home
                 </StyledLink>
 
                 <StyledLink
                   to="/AboutMe"
-                  className={active.item === "aboutme" ? "item active" : "item"}
+                  className={active.item === "/AboutMe" ? "item active" : "item"}
                   style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
-                  onClick={() => setActive({ item: "aboutme"})}
+                  onClick={() => setActive({ item: "/AboutMe"})}
                 >
                   About Me
                 </StyledLink>
 
                 <StyledLink
                   to="/Projects"
-                  className={active.item === "projects" ? "item active" : "item"}
+                  className={active.item === "/Projects" ? "item active" : "item"}
                   style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
-                  onClick={() => setActive({ item: "projects"})}
+                  onClick={() => setActive({ item: "/Projects"})}
                 >
                   Projects
-                </StyledLink>
-
-                <StyledLink
-                  to="/Resume"
-                  className={active.item === "resume" ? "item active" : "item"}
-                  style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
-                  onClick={() => setActive({ item: "resume"})}
-                >
-                  Resume
                 </StyledLink>
 
                 <div className="switch right menu">
@@ -92,7 +82,7 @@ const App = () => {
               <Route path="/" exact component={Home} />
               <Route path="/AboutMe" exact component={AboutMe} />
               <Route path="/Projects" exact component={Projects} />
-              <Route path="/Resume" exact component={Resume} />
+              
             </div>
           </BrowserRouter>
         </div>

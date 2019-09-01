@@ -40,13 +40,6 @@ const Navigation = props => {
         Projects
       </StyledLink>
 
-      <StyledLink
-        to="/Resume"
-        className="item"
-        style={{ color: props.style.mode === "dark" ? "#EEE" : "#111" }}
-      >
-        Resume
-      </StyledLink>
     </MenuHeader>
   );
 };

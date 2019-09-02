@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import AboutMe from "./AboutMe";
 import Home from "./Home";
 import Projects from "./Projects";
+import Resume from "./Resume";
 import "../App.css";
 
 const GlobalStyle = createGlobalStyle`
@@ -46,7 +47,6 @@ const App = () => {
                 >
                   Home
                 </StyledLink>
-
                 <StyledLink
                   to="/AboutMe"
                   className={
@@ -57,7 +57,6 @@ const App = () => {
                 >
                   About Me
                 </StyledLink>
-
                 <StyledLink
                   to="/Projects"
                   className={
@@ -68,7 +67,14 @@ const App = () => {
                 >
                   Projects
                 </StyledLink>
-
+                <StyledLink
+                  to="/Resume"
+                  className={active.item === "/Resume" ? "item active" : "item"}
+                  style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
+                  onClick={() => setActive({ item: "/Resume" })}
+                >
+                  Resume
+                </StyledLink>
                 <div className="switch right menu">
                   <input
                     id="cmn-toggle-1"
@@ -88,6 +94,7 @@ const App = () => {
               <Route path="/" exact component={Home} />
               <Route path="/AboutMe" exact component={AboutMe} />
               <Route path="/Projects" exact component={Projects} />
+              <Route path="/Resume" exact component={Resume} />
             </div>
           </BrowserRouter>
         </div>

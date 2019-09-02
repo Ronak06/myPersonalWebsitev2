@@ -32,10 +32,7 @@ export const FooterHeader = styled.h3`
   width: 100%;
 `;
 
-export const MenuHeader = styled.div`
-  font-family: "Comfortaa", cursive;
-  margin-top: "30px";
-`;
+export const MenuHeader = styled.div``;
 
 export const StyledLink = styled(Link)`
   font-size: 20px;

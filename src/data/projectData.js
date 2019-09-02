@@ -7,7 +7,7 @@ export const data = [
     website: "https://www.google.com",
     github: "https://www.github.com",
     image:
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
     needs: "People with super powers",
     status: "In Development",
     id: 1
@@ -33,7 +33,7 @@ export const data = [
     website: "https://githubfinder0609.netlify.com",
     github: "https://github.com/Ronak06/Github-Finder",
     image:
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/Sample%20Logo.png",
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
     needs: "People with super powers",
     status: "Live",
     id: 3

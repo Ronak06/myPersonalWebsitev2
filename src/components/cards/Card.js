@@ -1,6 +1,8 @@
 import React from "react";
 import StackIcons from "./StackIcons";
 
+import { withTheme } from "styled-components";
+
 const Card = props => {
   const img = {
     maxWidth: "400px"
@@ -10,7 +12,11 @@ const Card = props => {
     <div className="column">
       <div className="ui fluid card">
         <div className="image">
-          <img style={img} src={props.data.image} alt={img} />
+          <img
+            src={props.data.image}
+            style={{ height: "200px", width: "350px" }}
+            alt={img}
+          />
         </div>
         <div className="content">
           <StackIcons data={props.data.stack} />
@@ -48,4 +54,4 @@ const Card = props => {
   );
 };
 
-export default Card;
+export default withTheme(Card);

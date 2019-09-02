@@ -1,6 +1,6 @@
 import React from "react";
-import Emoji from "../themes/Emoji";
-import { Picture, Content } from "../themes/styles";
+import Emoji from "../../themes/Emoji";
+import { Picture, Content } from "../../themes/styles";
 
 const AboutMe = () => {
   return (

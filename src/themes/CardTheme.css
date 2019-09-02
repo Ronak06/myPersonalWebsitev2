@@ -83,7 +83,18 @@
   content: "Demo";
   font-size: 20px;
 }
-
+.spotifyapi {
+  background: #1db954;
+}
+.spotifyapi span::after {
+  content: "Spotify-API";
+}
+.jquery {
+  background: #bea3ca;
+}
+.jquery span::after {
+  content: "JQuery";
+}
 .ScrollUpButton__Toggled:focus {
   outline: 0;
 }

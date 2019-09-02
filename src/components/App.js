@@ -5,11 +5,12 @@ import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom";
 
 //file imports
-import AboutMe from "./AboutMe";
-import Home from "./Home";
-import Projects from "./Projects";
-import Resume from "./Resume";
-import "../App.css";
+import AboutMe from "./sections/AboutMe";
+import Home from "./sections/Home";
+import Projects from "./sections/Projects";
+import Resume from "./sections/Resume";
+import ScrollUpButton from "react-scroll-up-button";
+import "../themes/toggleSwitch.css";
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -38,7 +39,7 @@ const App = () => {
         <div className="ui container">
           <BrowserRouter>
             <div>
-              <div className="ui secondary pointing menu">
+              <div className="ui secondary menu">
                 <StyledLink
                   to="/"
                   className={active.item === "/" ? "item active" : "item"}
@@ -97,6 +98,19 @@ const App = () => {
               <Route path="/Resume" exact component={Resume} />
             </div>
           </BrowserRouter>
+          <ScrollUpButton
+        StopPosition={0}
+        ShowAtPosition={50}
+        EasingType="easeOutCubic"
+        AnimationDuration={500}
+        ContainerClassName="ScrollUpButton__Container"
+        TransitionClassName="ScrollUpButton__Toggled"
+        style={{
+          backgroundColor: "black",
+          borderRadius: "10px"
+        }}
+        ToggledStyle={{}}
+      />
         </div>
       </Fragment>
     </ThemeProvider>

@@ -14,7 +14,7 @@ const Card = props => {
         <div className="image">
           <img
             src={props.data.image}
-            style={{ height: "200px", width: "350px" }}
+            style={{ height: "200px", width: "348px" }}
             alt={img}
           />
         </div>

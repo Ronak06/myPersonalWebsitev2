@@ -1,5 +1,18 @@
 export const data = [
   {
+    project: "My Personal Website",
+    stack: ["react", "semantic-ui"],
+    description:
+      "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
+    website: "https://www.google.com",
+    github: "https://github.com/Ronak06/myPersonalWebsitev2",
+    needs: "People with super powers, semi-super powers, or no powers at all",
+    image:
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
+    status: "In Development",
+    id: 1
+  },
+  {
     project: "Contact Keeper",
     stack: ["react", "express", "mongodb", "node"],
     description:
@@ -10,7 +23,20 @@ export const data = [
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
     needs: "People with super powers",
     status: "In Development",
-    id: 1
+    id: 2
+  },
+  {
+    project: "Spotify Mockup",
+    stack: ["react", "spotifyapi", "jquery"],
+    description:
+      "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
+    website: "https://developer.spotify.com",
+    github: "https://github.com/Ronak06/spotify-music",
+    needs: "People with super powers, semi-super powers, or no powers at all",
+    image:
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
+    status: "In Development",
+    id: 3
   },
   {
     project: "Cardio Tracker",
@@ -23,7 +49,7 @@ export const data = [
     image:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
     status: "Live",
-    id: 2
+    id: 4
   },
   {
     project: "Github Finder",
@@ -36,19 +62,6 @@ export const data = [
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
     needs: "People with super powers",
     status: "Live",
-    id: 3
-  },
-  {
-    project: "My Personal Website",
-    stack: ["react", "semantic-ui"],
-    description:
-      "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
-    website: "https://www.google.com",
-    github: "https://github.com/Ronak06/myPersonalWebsitev2",
-    needs: "People with super powers, semi-super powers, or no powers at all",
-    image:
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
-    status: "In Development",
-    id: 4
+    id: 5
   }
 ];

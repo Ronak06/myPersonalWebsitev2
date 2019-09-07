@@ -77,6 +77,13 @@ const App = () => {
                   Resume
                 </StyledLink>
                 <div className="switch right menu">
+                  <p style={{ position: "absolute", top: "9px", right: "14%" }}>
+                    {theme.mode === "light" ? (
+                      <i className="large sun icon"></i>
+                    ) : (
+                      <i className="large sun outline icon"></i>
+                    )}
+                  </p>
                   <input
                     id="cmn-toggle-1"
                     className="cmn-toggle cmn-toggle-round"
@@ -90,6 +97,15 @@ const App = () => {
                     }
                   />
                   <label htmlFor="cmn-toggle-1" />
+                  <p
+                    style={{ position: "absolute", top: "9px", right: "8.5%" }}
+                  >
+                    {theme.mode === "light" ? (
+                      <i className="large moon outline icon"></i>
+                    ) : (
+                      <i className="large moon icon"></i>
+                    )}
+                  </p>
                 </div>
               </div>
               <Route path="/" exact component={Home} />
@@ -99,18 +115,18 @@ const App = () => {
             </div>
           </BrowserRouter>
           <ScrollUpButton
-        StopPosition={0}
-        ShowAtPosition={50}
-        EasingType="easeOutCubic"
-        AnimationDuration={500}
-        ContainerClassName="ScrollUpButton__Container"
-        TransitionClassName="ScrollUpButton__Toggled"
-        style={{
-          backgroundColor: "black",
-          borderRadius: "10px"
-        }}
-        ToggledStyle={{}}
-      />
+            StopPosition={0}
+            ShowAtPosition={50}
+            EasingType="easeOutCubic"
+            AnimationDuration={500}
+            ContainerClassName="ScrollUpButton__Container"
+            TransitionClassName="ScrollUpButton__Toggled"
+            style={{
+              backgroundColor: "black",
+              borderRadius: "10px"
+            }}
+            ToggledStyle={{}}
+          />
         </div>
       </Fragment>
     </ThemeProvider>

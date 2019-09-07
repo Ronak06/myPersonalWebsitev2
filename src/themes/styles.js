@@ -35,9 +35,34 @@ export const Header = styled.h1`
 `;
 
 export const FooterDiv = styled.div`
-  margin-top: 45%;
-  margin-left: 30%;
-  position: relative;
+  top: 52%;
+  left: 25%;
+  position: absolute;
+
+  @media ${device.mobileS} {
+    top: 40%;
+    left: 25%;
+  }
+  @media ${device.mobileM} {
+    top: 40%;
+    left: 25%;
+  }
+  @media ${device.mobileL} {
+    top: 70%;
+    left: 25%;
+  }
+  @media ${device.tabletS} {
+    top: 53%;
+    left: 35%;
+  }
+  @media ${device.tablet} {
+    top: 53%;
+    left: 35%;
+  }
+  @media ${device.laptop} {
+    top: 70%;
+    left: 35%;
+  }
 `;
 
 export const StyledLink = styled(Link)`

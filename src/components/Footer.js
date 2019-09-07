@@ -7,8 +7,21 @@ import { device } from "../themes/deviceConfig";
 import { data } from "../data/footerData";
 
 const Icon = styled.i`
-  font-size: 80px !important;
+  font-size: 30px !important;
   color: ${props => (props.theme.mode === "dark" ? "#EEE" : "#111")};
+
+  @media ${device.mobileM} {
+    font-size: 40px !important;
+  }
+  @media ${device.mobileL} {
+    font-size: 60px !important;
+  }
+  @media ${device.tablet} {
+    font-size: 70px !important;
+  }
+  @media ${device.laptop} {
+    font-size: 80px !important;
+  }
 `;
 
 const Footer = () => {

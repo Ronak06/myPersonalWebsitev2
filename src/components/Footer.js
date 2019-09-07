@@ -1,45 +1,34 @@
 import React from "react";
 import "../themes/footer.css";
 import styled, { withTheme } from "styled-components";
+import { FooterDiv } from "../themes/styles";
+import { device } from "../themes/deviceConfig";
+
+import { data } from "../data/footerData";
 
 const Icon = styled.i`
-  font-size: 40px !important;
-  color: ${props => props.theme.mode === "dark" ? "#EEE" : "#111"};
+  font-size: 80px !important;
+  color: ${props => (props.theme.mode === "dark" ? "#EEE" : "#111")};
 `;
 
-const Footer = (props) => {
-  return (
-    <div className="wrapper">
+const Footer = () => {
+  const footerIcons = [];
+
+  data.forEach(item => {
+    const iconClass = item.name + " icon";
+    footerIcons.push(
       <a
-        href="https://www.linkedin.com/in/ronakpatel6/"
+        href={item.link}
         target="_blank"
         rel="noopener noreferrer"
+        key={item.id}
       >
-      <Icon className="linkedin icon" id="linkedin" size="huge" />
+        <Icon className={iconClass} id={item.name} />
       </a>
-      <a
-        href="https://medium.com/@ronakpatel0609"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Icon className="medium icon" id="medium" size="huge" />
-      </a>
-      <a
-        href="https://www.github.com/Ronak06"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Icon className="github icon" id="github" size="huge" />
-      </a>
-      <a
-        href="mailto:ronak1.patel@ryerson.ca"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Icon className="envelope outline icon" id="mail" size="huge" />
-      </a>
-    </div>
-  );
+    );
+  });
+
+  return <FooterDiv>{footerIcons}</FooterDiv>;
 };
 
 export default withTheme(Footer);

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { device } from "./deviceConfig";
 
 export const Content = styled.p`
   font-size: 27px;
@@ -7,32 +8,37 @@ export const Content = styled.p`
 `;
 
 export const Header = styled.h1`
-  font-size: 200px;
+  font-size: 75px;
   font-family: "Satisfy", cursive;
   left: 0;
-  line-height: 200px;
-  margin-top: -100px;
   position: absolute;
   text-align: center;
-  top: 30%;
+  top: 25%;
   width: 100%;
+
+  @media ${device.mobileL} {
+    font-size: 150px;
+    top: 20%;
+  }
+  @media ${device.tablet} {
+    font-size: 165px;
+    top: 25%;
+  }
+  @media ${device.laptop} {
+    font-size: 225px;
+    top: 25%;
+  }
+  @media ${device.laptopL} {
+    font-size: 300px;
+    top: 22%;
+  }
 `;
 
-export const ProjectHeader = styled.h1`
-  font-family: "Cormorant Garamond", serif;
-  text-align: center;
+export const FooterDiv = styled.div`
+  margin-top: 45%;
+  margin-left: 30%;
+  position: relative;
 `;
-
-export const FooterHeader = styled.h3`
-  left: 0;
-  line-height: 200px;
-  margin-top: -100px;
-  position: absolute;
-  top: 55%;
-  width: 100%;
-`;
-
-export const MenuHeader = styled.div``;
 
 export const StyledLink = styled(Link)`
   font-size: 20px;

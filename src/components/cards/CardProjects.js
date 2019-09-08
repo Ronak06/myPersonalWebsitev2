@@ -9,7 +9,7 @@ const CardProjects = props => {
     projects.push(<Card data={item} key={item.id} />);
   });
 
-  return <div className="ui three column grid">{projects}</div>;
+  return <div className="ui stackable three column grid">{projects}</div>;
 };
 
 export default CardProjects;

@@ -5,18 +5,14 @@ import { withTheme } from "styled-components";
 
 const Card = props => {
   const img = {
-    maxWidth: "400px"
+    maxWidth: "100%;"
   };
 
   return (
     <div className="column">
       <div className="ui fluid card">
         <div className="image">
-          <img
-            src={props.data.image}
-            style={{ height: "200px", width: "348px" }}
-            alt={img}
-          />
+          <img src={props.data.image} alt={img} />
         </div>
         <div className="content">
           <StackIcons data={props.data.stack} />

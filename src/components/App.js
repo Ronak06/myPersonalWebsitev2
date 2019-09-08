@@ -39,7 +39,7 @@ const App = () => {
         <div className="ui container">
           <BrowserRouter>
             <div>
-              <div className="ui secondary menu">
+              <div className="ui stackable secondary menu">
                 <StyledLink
                   to="/"
                   className={active.item === "/" ? "item active" : "item"}

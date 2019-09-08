@@ -29,12 +29,7 @@
 .node span::after {
   content: "Node.js";
 }
-.python {
-  background: #eadd86;
-}
-.python span::after {
-  content: "Python";
-}
+
 .mongodb {
   background: #afeae5;
 }

@@ -7,6 +7,15 @@ export const Content = styled.p`
   padding-top: 25px;
 `;
 
+export const ContentHeader = styled.h1`
+  font-size: 50px;
+  padding-top: 100px;
+
+  @media (max-width: 500px) {
+    padding-top: 50px;
+  }
+`;
+
 export const Header = styled.h1`
   font-size: 75px;
   font-family: "Satisfy", cursive;
@@ -77,7 +86,11 @@ export const StyledLink = styled(Link)`
 export const Picture = styled.img`
   padding: 50px;
   padding-top: 75px;
-  width: 1500px;
+  width: 500px;
+
+  @media (max-width: 500px) {
+    width: 350px;
+  }
 `;
 
 export const Wrapper = styled.div`

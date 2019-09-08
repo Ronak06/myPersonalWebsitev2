@@ -1,19 +1,19 @@
 import React from "react";
 import Emoji from "../../themes/Emoji";
-import { Picture, Content } from "../../themes/styles";
+import { Picture, Content, ContentHeader } from "../../themes/styles";
 
 const AboutMe = () => {
   return (
     <div
       className="ui equal width center aligned padded grid"
-      style={{ paddingTop: 50 }}
+      style={{ top: "20%" }}
     >
-      <div className="row">
+      <div className="ui stackable two column grid">
         <div className="column">
           <Picture src={"/images/Me.jpg"} alt="Ronak Patel" />
         </div>
         <div className="column">
-          <h1 style={{ fontSize: "50px", paddingTop: "100px" }}>Who am I?</h1>
+          <ContentHeader>Who am I?</ContentHeader>
           <Content>
             Hi! My name is Ronak Patel. I am a Computer Science student aspiring
             to be a Full-stack Developer. I truly enjoy coding{" "}

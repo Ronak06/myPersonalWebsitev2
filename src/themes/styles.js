@@ -22,12 +22,12 @@ export const Header = styled.h1`
   left: 0;
   position: absolute;
   text-align: center;
-  top: 25%;
+  top: 35%;
   width: 100%;
 
   @media ${device.mobileL} {
     font-size: 150px;
-    top: 20%;
+    top: 30%;
   }
   @media ${device.tablet} {
     font-size: 165px;
@@ -44,24 +44,24 @@ export const Header = styled.h1`
 `;
 
 export const FooterDiv = styled.div`
-  top: 52%;
-  left: 25%;
+  top: 65%;
+  left: 15%;
   position: absolute;
 
   @media ${device.mobileS} {
-    top: 40%;
+    top: 50%;
     left: 25%;
   }
   @media ${device.mobileM} {
-    top: 40%;
-    left: 25%;
+    top: 55%;
+    left: 15%;
   }
   @media ${device.mobileL} {
-    top: 70%;
-    left: 25%;
+    top: 85%;
+    left: 15%;
   }
   @media ${device.tabletS} {
-    top: 53%;
+    top: 60%;
     left: 35%;
   }
   @media ${device.tablet} {
@@ -69,7 +69,7 @@ export const FooterDiv = styled.div`
     left: 35%;
   }
   @media ${device.laptop} {
-    top: 70%;
+    top: 75%;
     left: 35%;
   }
 `;

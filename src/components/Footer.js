@@ -20,7 +20,7 @@ const Icon = styled.i`
     font-size: 70px !important;
   }
   @media ${device.laptop} {
-    font-size: 80px !important;
+    font-size: 90px !important;
   }
 `;
 

@@ -76,14 +76,27 @@ const App = () => {
                 >
                   Resume
                 </StyledLink>
-                <div className="switch right menu">
-                  <p style={{ position: "absolute", top: "9px", right: "14%" }}>
-                    {theme.mode === "light" ? (
-                      <i className="large sun icon"></i>
-                    ) : (
-                      <i className="large sun outline icon"></i>
-                    )}
-                  </p>
+                <div
+                  className="switch right menu"
+                  style={{ flexDirection: "row" }}
+                >
+                  {theme.mode === "light" ? (
+                    <i
+                      className="large sun icon"
+                      style={{
+                        position: "relative",
+                        top: "10px"
+                      }}
+                    ></i>
+                  ) : (
+                    <i
+                      className="large sun outline icon"
+                      style={{
+                        position: "relative",
+                        top: "10px"
+                      }}
+                    ></i>
+                  )}
                   <input
                     id="cmn-toggle-1"
                     className="cmn-toggle cmn-toggle-round"
@@ -97,15 +110,23 @@ const App = () => {
                     }
                   />
                   <label htmlFor="cmn-toggle-1" />
-                  <p
-                    style={{ position: "absolute", top: "9px", right: "8.5%" }}
-                  >
-                    {theme.mode === "light" ? (
-                      <i className="large moon outline icon"></i>
-                    ) : (
-                      <i className="large moon icon"></i>
-                    )}
-                  </p>
+                  {theme.mode === "light" ? (
+                    <i
+                      className="large moon outline icon"
+                      style={{
+                        position: "relative",
+                        top: "10px"
+                      }}
+                    ></i>
+                  ) : (
+                    <i
+                      className="large moon icon"
+                      style={{
+                        position: "relative",
+                        top: "10px"
+                      }}
+                    ></i>
+                  )}
                 </div>
               </div>
               <Route path="/" exact component={Home} />

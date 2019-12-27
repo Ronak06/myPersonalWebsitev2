@@ -1,6 +1,6 @@
 //dependencies
 import React, { useState, Fragment } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -130,11 +130,13 @@ const App = () => {
                   )}
                 </div>
               </div>
-              <Route path="/" exact component={Home} />
-              <Route path="/AboutMe" exact component={AboutMe} />
-              <Route path="/Projects" exact component={Projects} />
-              <Route path="/Resume" exact component={Resume} />
-              <Route component={NotFound} />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/AboutMe" component={AboutMe} />
+                <Route exact path="/Projects" component={Projects} />
+                <Route exact path="/Resume" component={Resume} />
+                <Route component={NotFound} />
+              </Switch>
             </div>
           </BrowserRouter>
           <ScrollUpButton

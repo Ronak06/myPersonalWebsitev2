@@ -9,6 +9,7 @@ import AboutMe from "./sections/AboutMe";
 import Home from "./sections/Home";
 import Projects from "./sections/Projects";
 import Resume from "./sections/Resume";
+import NotFound from "./sections/NotFound";
 import ScrollUpButton from "react-scroll-up-button";
 import "../themes/toggleSwitch.css";
 
@@ -133,6 +134,7 @@ const App = () => {
               <Route path="/AboutMe" exact component={AboutMe} />
               <Route path="/Projects" exact component={Projects} />
               <Route path="/Resume" exact component={Resume} />
+              <Route component={NotFound} />
             </div>
           </BrowserRouter>
           <ScrollUpButton

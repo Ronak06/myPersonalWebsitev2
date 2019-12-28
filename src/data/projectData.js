@@ -7,8 +7,7 @@ export const data = [
     website: "https://www.google.com",
     github: "https://github.com/Ronak06/myPersonalWebsitev2",
     needs: "People with super powers, semi-super powers, or no powers at all",
-    image:
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
+    image: "/images/test.png",
     status: "In Development",
     id: 1
   },
@@ -19,8 +18,7 @@ export const data = [
       "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
     website: "https://www.google.com",
     github: "https://www.github.com",
-    image:
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
+    image: "/images/test2.png",
     needs: "People with super powers",
     status: "In Development",
     id: 2
@@ -33,8 +31,7 @@ export const data = [
     website: "https://developer.spotify.com",
     github: "https://github.com/Ronak06/spotify-music",
     needs: "People with super powers, semi-super powers, or no powers at all",
-    image:
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
+    image: "/images/test3.png",
     status: "In Development",
     id: 3
   },
@@ -46,8 +43,7 @@ export const data = [
     website: "https://www.google.com",
     github: "https://github.com/Ronak06/Cardio-Tracker",
     needs: "People with super powers, semi-super powers, or no powers at all",
-    image:
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
+    image: "/images/test4.png",
     status: "Live",
     id: 4
   },
@@ -58,8 +54,7 @@ export const data = [
       "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
     website: "https://githubfinder0609.netlify.com",
     github: "https://github.com/Ronak06/Github-Finder",
-    image:
-      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
+    image: "/images/test5.png",
     needs: "People with super powers",
     status: "Live",
     id: 5

@@ -16,7 +16,7 @@ const Card = props => {
         </div>
         <div className="content">
           <StackIcons data={props.data.stack} />
-          <p className="header">{props.data.project}</p>
+
           <div className="meta">
             <span className="status">{props.data.status}</span>
           </div>

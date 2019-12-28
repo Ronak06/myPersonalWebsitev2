@@ -31,7 +31,7 @@ const StyledLink = styled(Link)`
 
 const App = () => {
   const [theme, setTheme] = useState({ mode: "light" });
-  const [active, setActive] = useState({ item: window.location.pathname });
+  // const [active, setActive] = useState({ item: "/AboutMe" });
 
   return (
     <ThemeProvider theme={theme}>
@@ -43,37 +43,41 @@ const App = () => {
               <div className="ui stackable secondary menu">
                 <StyledLink
                   to="/"
-                  className={active.item === "/" ? "item active" : "item"}
+                  className={"item"}
+                  // className={active.item === "/" ? "item active" : "item"}
                   style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
-                  onClick={() => setActive({ item: "/" })}
+                  // onClick={() => setActive({ item: "/" })}
                 >
                   Home
                 </StyledLink>
                 <StyledLink
                   to="/AboutMe"
-                  className={
-                    active.item === "/AboutMe" ? "item active" : "item"
-                  }
+                  className={"item"}
+                  // className={
+                  //   active.item === "/AboutMe" ? "item active" : "item"
+                  // }
                   style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
-                  onClick={() => setActive({ item: "/AboutMe" })}
+                  // onClick={() => setActive({ item: "/AboutMe" })}
                 >
                   About Me
                 </StyledLink>
                 <StyledLink
                   to="/Projects"
-                  className={
-                    active.item === "/Projects" ? "item active" : "item"
-                  }
+                  className={"item"}
+                  // className={
+                  //   active.item === "/Projects" ? "item active" : "item"
+                  // }
                   style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
-                  onClick={() => setActive({ item: "/Projects" })}
+                  // onClick={() => setActive({ item: "/Projects" })}
                 >
                   Projects
                 </StyledLink>
                 <StyledLink
                   to="/Resume"
-                  className={active.item === "/Resume" ? "item active" : "item"}
+                  className={"item"}
+                  // className={active.item === "/Resume" ? "item active" : "item"}
                   style={{ color: theme.mode === "dark" ? "#EEE" : "#111" }}
-                  onClick={() => setActive({ item: "/Resume" })}
+                  // onClick={() => setActive({ item: "/Resume" })}
                 >
                   Resume
                 </StyledLink>

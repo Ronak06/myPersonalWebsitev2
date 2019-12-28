@@ -60,3 +60,12 @@ input.cmn-toggle-round:checked + label:after {
   top: "10px";
   right: "8.5%";
 }
+#content {
+  min-height: 100px;
+}
+.ui.grid {
+  padding: 0 !important;
+}
+.pushable.segment {
+  margin: 0 !important;
+}

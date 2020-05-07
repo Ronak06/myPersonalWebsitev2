@@ -41,7 +41,7 @@
 }
 
 .githubapi span::after {
-  content: "Github API";
+  content: "Github-API";
 }
 .status {
   color: #7699c2;
@@ -51,6 +51,24 @@
 }
 .semantic-ui span::after {
   content: "Semantic-UI";
+}
+.opencage {
+  background: #59c267;
+}
+.opencage span::after {
+  content: "OpenCage Geocoder";
+}
+.darksky-api {
+  background: #4e4b4b;
+}
+.darksky-api span::after {
+  content: "DarkSky-API";
+}
+.material-ui {
+  background: #2e76e2;
+}
+.material-ui span::after {
+  content: "Material-UI";
 }
 .redux {
   background: #764abc;

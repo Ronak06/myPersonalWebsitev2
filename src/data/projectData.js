@@ -6,10 +6,20 @@ export const data = [
       "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
     website: "https://www.google.com",
     github: "https://github.com/Ronak06/myPersonalWebsitev2",
-    needs: "People with super powers, semi-super powers, or no powers at all",
-    image: "/images/test.png",
+    image: "/images/mywebsite.png",
     status: "In Development",
     id: 1
+  },
+  {
+    project: "Weather Forecast",
+    stack: ["react", "material-ui", "darksky-api", "opencage"],
+    description:
+      "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
+    website: "https://www.google.com",
+    github: "https://github.com/Ronak06/WeatherForecast",
+    image: "/images/weatherforecast.png",
+    status: "Live",
+    id: 2
   },
   {
     project: "Contact Keeper",
@@ -17,11 +27,10 @@ export const data = [
     description:
       "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
     website: "https://www.google.com",
-    github: "https://www.github.com",
-    image: "/images/test2.png",
-    needs: "People with super powers",
+    github: "https://github.com/Ronak06/ContactKeeper",
+    image: "/images/contactkeeper.png",
     status: "In Development",
-    id: 2
+    id: 3
   },
   {
     project: "Spotify Mockup",
@@ -30,10 +39,9 @@ export const data = [
       "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
     website: "https://developer.spotify.com",
     github: "https://github.com/Ronak06/spotify-music",
-    needs: "People with super powers, semi-super powers, or no powers at all",
-    image: "/images/test3.png",
+    image: "/images/spotifymockup.png",
     status: "In Development",
-    id: 3
+    id: 4
   },
   {
     project: "Cardio Tracker",
@@ -42,10 +50,9 @@ export const data = [
       "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
     website: "https://www.google.com",
     github: "https://github.com/Ronak06/Cardio-Tracker",
-    needs: "People with super powers, semi-super powers, or no powers at all",
-    image: "/images/test4.png",
+    image: "/images/cardiotracker.png",
     status: "Live",
-    id: 4
+    id: 5
   },
   {
     project: "Github Finder",
@@ -54,9 +61,8 @@ export const data = [
       "Cardio Tracker allows for a personal tracking application for a user's cardio logs. A user is able to sign in with Google to personally create cardio logs for tracking purposes.",
     website: "https://githubfinder0609.netlify.com",
     github: "https://github.com/Ronak06/Github-Finder",
-    image: "/images/test5.png",
-    needs: "People with super powers",
+    image: "/images/githubfinder.png",
     status: "Live",
-    id: 5
+    id: 6
   }
 ];

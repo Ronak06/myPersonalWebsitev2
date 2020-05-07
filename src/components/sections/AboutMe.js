@@ -10,13 +10,12 @@ const AboutMe = () => {
     >
       <div className="ui stackable two column grid">
         <div className="column">
-          <Picture src={"/images/Me.jpg"} alt="Ronak Patel" />
+          <Picture src={"/images/Me3.jpg"} alt="Ronak Patel" />
         </div>
         <div className="column">
           <ContentHeader>Who am I?</ContentHeader>
           <Content>
-            Hi! My name is Ronak Patel. I am a Computer Science student aspiring
-            to be a Full-stack Developer. I truly enjoy coding{" "}
+            Hi! My name is Ronak Patel. I have a BSc. in Computer Science at Ryerson University. I truly enjoy coding{" "}
             <Emoji symbol="💻" label="laptop" /> and love to build new things.
             Outside of programming, I love watching (and playing) Basketball{" "}
             <Emoji symbol="🏀" label="basketball" />, gaming{" "}

@@ -84,9 +84,9 @@ export const StyledLink = styled(Link)`
 `;
 
 export const Picture = styled.img`
-  padding: 50px;
-  padding-top: 75px;
-  width: 500px;
+  padding: 70px;
+  padding-top: 125px;
+  width: 600px;
 
   @media (max-width: 500px) {
     width: 350px;

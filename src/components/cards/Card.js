@@ -5,7 +5,8 @@ import { withTheme } from "styled-components";
 
 const Card = props => {
   const img = {
-    maxWidth: "100%;"
+    maxWidth: "100%",
+    maxHeight: "50%"
   };
 
   return (
@@ -16,7 +17,6 @@ const Card = props => {
         </div>
         <div className="content">
           <StackIcons data={props.data.stack} />
-
           <div className="meta">
             <span className="status">{props.data.status}</span>
           </div>
